@@ -1,0 +1,13 @@
+# This config contains commands to run when a player discovers a new chunk.
+# The commands will be run as console.
+# '%p' will be replaced with the player's name, '%w' will be replaced with the player's current world's name.
+# All commands support chatcolors.
+# Any number of commands and worlds may be added.
+worlds-to-operate-in:
+  - 'world'
+  - 'world_nether'
+  - 'world_the_end'
+commands:
+  - 'give %p diamond 1'
+  - 'say &r&6%p &rdiscovered a new chunk in &c ''%w''&r!'
+  - 'tell %p &rNice job! You discovered a &6new chunk&r&c!&r Take your reward.'

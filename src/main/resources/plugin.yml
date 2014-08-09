@@ -1,0 +1,4 @@
+name: ExplorationReward
+version: ${project.version}
+main: io.github.tubakyle.explorationreward.ExplorationReward
+author: kps1796
