@@ -11,9 +11,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.world.ChunkPopulateEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.File;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by Kyle Sferrazza on 8/8/2014.
@@ -29,24 +27,8 @@ public class ExplorationReward extends JavaPlugin implements Listener{
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(this, this);
         runEvery.saveDefaultConfig();
-        if (!getConfig().isSet("config-version") || !getConfig().getString("config-version").equals("1.1")) {
-            Map<String, Object> configValues = getConfig().getValues(true);
-            File conf = new File(getDataFolder(), "config.yml");
-            conf.delete();
-            reloadConfig();
-            saveDefaultConfig();
-            reloadConfig();
-            for (Map.Entry<String, Object> entry : configValues.entrySet()) {
-                String key = entry.getKey();
-                Object value = entry.getValue();
-                getLogger().info("KEY: " + key);
-                getLogger().info("VALUE: " + value);
-                getConfig().set(key, value);
-            }
-
-            saveConfig();
-
-        }
+        ConfigAccessor ca = new ConfigAccessor(this, "config.yml");
+        ca.updateConfig("1.1");
     }
 
     @EventHandler
