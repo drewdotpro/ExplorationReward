@@ -12,7 +12,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.bukkit:bukkit:1.7.9-R0.2" level="project" />
-    <orderEntry type="library" name="Maven: io.github.tubakyle:KpsLib:1.0" level="project" />
+    <orderEntry type="library" name="Maven: io.github.tubakyle:KpsAPI:1.0.1" level="project" />
   </component>
 </module>
 

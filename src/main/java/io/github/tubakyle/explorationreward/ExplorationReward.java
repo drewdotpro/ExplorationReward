@@ -1,7 +1,7 @@
 package io.github.tubakyle.explorationreward;
 
-import io.github.tubakyle.kpslib.ConfigAccessor;
-import io.github.tubakyle.kpslib.PlayerFinder;
+import io.github.tubakyle.kpsapi.ConfigAccessor;
+import io.github.tubakyle.kpsapi.PlayerFinder;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
