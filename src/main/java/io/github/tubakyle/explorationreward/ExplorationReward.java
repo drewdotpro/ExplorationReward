@@ -34,7 +34,7 @@ public class ExplorationReward extends JavaPlugin implements Listener{
         }
         List<String> commandsToRun = getConfig().getStringList("commands");
         for (String command : commandsToRun) {
-            command = command.replace("%p", player.getDisplayName());
+            command = command.replace("%p", player.getName());
             command = command.replace("%w", player.getWorld().getName());
             command = ChatColor.translateAlternateColorCodes('&', command);
             CommandSender console = getServer().getConsoleSender();
