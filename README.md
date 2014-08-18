@@ -12,6 +12,8 @@ The config contains commands to run when a player discovers a new chunk.
 <br>'%p' will be replaced with the player's name, '%w' will be replaced with the player's current world's name.
 <br>All commands support chatcolors.
 <br>Any number of commands and worlds may be added.
+<br>Run-every makes it so X number of new explored territories will trigger the commands.
+<br>config-version should not be changed.
 <br><br>Here is the default config:
 <pre>worlds-to-operate-in:
   - 'world'
@@ -20,7 +22,8 @@ The config contains commands to run when a player discovers a new chunk.
 commands:
   - 'give %p diamond 1'
   - 'say &r&6%p &rdiscovered a new chunk in &c ''%w''&r!'
-  - 'tell %p &rNice job! You discovered a &6new chunk&r&c!&r Take your reward.'</pre>
+  - 'tell %p &rNice job! You discovered a &6new chunk&r&c!&r Take your reward.'
+run-every: 100</pre>
 
 ## Commands
 This plugin does not contain any commands.

@@ -3,6 +3,9 @@
 # '%p' will be replaced with the player's name, '%w' will be replaced with the player's current world's name.
 # All commands support chatcolors.
 # Any number of commands and worlds may be added.
+# Run-every makes it so X number of new explored territories will trigger the commands.
+# config-version should not be changed.
+config-version: '1.1'
 worlds-to-operate-in:
   - 'world'
   - 'world_nether'
@@ -11,3 +14,4 @@ commands:
   - 'give %p diamond 1'
   - 'say &r&6%p &rdiscovered a new chunk in &c ''%w''&r!'
   - 'tell %p &rNice job! You discovered a &6new chunk&r&c!&r Take your reward.'
+run-every: 100
