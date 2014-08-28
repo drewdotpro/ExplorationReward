@@ -1,5 +1,6 @@
 # This config contains commands to run when a player discovers a new chunk.
 # The commands will be run as console.
+# The default settings reward a player 3 diamonds for around a day's worth (20min) of running into unexplored territory.
 # '%p' will be replaced with the player's name, '%w' will be replaced with the player's current world's name.
 # All commands support chatcolors.
 # Any number of commands and worlds may be added.
@@ -11,7 +12,6 @@ worlds-to-operate-in:
   - 'world_nether'
   - 'world_the_end'
 commands:
-  - 'give %p diamond 1'
-  - 'say &r&6%p &rdiscovered a new chunk in &c ''%w''&r!'
-  - 'tell %p &rNice job! You discovered a &6new chunk&r&c!&r Take your reward.'
-run-every: 100
+  - 'give %p diamond 3'
+  - 'say &r&6%p &runcovered some map in&c ''%w''&r and earned 3 diamonds!'
+run-every: 6000
